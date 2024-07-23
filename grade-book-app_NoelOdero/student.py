@@ -41,3 +41,4 @@ class Student:
             weighted_sum = sum(course['grade'] * course['credits'] for course in self.courses_registered)
             self.GPA = weighted_sum / total_credits
         print(f"Calculated GPA: {self.GPA}")
+
