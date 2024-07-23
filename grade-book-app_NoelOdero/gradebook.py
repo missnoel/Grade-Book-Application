@@ -78,6 +78,18 @@ class GradeBook:
         students_in_range = [s for s in self.student_list if min_grade <= s.GPA <= max_grade]
         return students_in_range
 
+    def view_students(self):
+        """
+        Display a list of all students.
+        """
+        if not self.student_list:
+            print("No students found.")
+            return
+
+        print("List of Students:")
+        for student in self.student_list:
+            print(f"Email: {student.email}, Name: {student.names}, GPA: {student.GPA}")
+
     def generate_transcript(self, student_email):
         """
         Generate a transcript for a specific student.

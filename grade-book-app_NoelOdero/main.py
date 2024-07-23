@@ -20,7 +20,8 @@ def display_menu():
     print("4. Calculate Ranking")
     print("5. Search by Grade")
     print("6. Generate Transcript")
-    print("7. Exit")
+    print("7. View list of students")
+    print("8. Exit")
 
 def main():
 
@@ -107,8 +108,12 @@ def main():
             student_email = input("Enter student email: ")
             gradebook.generate_transcript(student_email)
 
-
         elif choice == 7:
+            # View list of students
+            gradebook.view_students()
+
+
+        elif choice == 8:
             # Exit the application
             print("\nExiting the application. Bye!\n")
             break
