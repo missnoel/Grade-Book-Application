@@ -3,6 +3,8 @@
 
 
 from gradebook import GradeBook
+from course import Course
+from student import Student
 
 def display_menu():
 
@@ -29,9 +31,10 @@ def main():
     # Create an instance of the GradeBook class
     gradebook = GradeBook()
 
-    # Load existing students and courses from files
+     # Load existing students and courses from files
     gradebook.load_students()
     gradebook.load_courses()
+
 
     while True:
         # Display the menu and get user's choice
@@ -75,12 +78,13 @@ def main():
             print("\nStudent registered for the course successfully!")
         
         elif choice == 4:
-            print("Calculating student rankings...")
+            print("\nCalculating student rankings...")
             # Calculate and display student rankings based on GPA
             ranking = gradebook.calculate_ranking()
             print("Student Rankings:")
             for idx, student in enumerate(ranking):
                 print(f"{idx + 1}. {student.email} (GPA: {student.GPA})")
+            print("\nStudent ranking calculated successfully")
             
 
         elif choice == 5:
@@ -115,4 +119,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

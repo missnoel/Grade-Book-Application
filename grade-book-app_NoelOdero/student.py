@@ -34,11 +34,10 @@ class Student:
         Calculate the GPA of the student.
         """
         total_credits = sum(course['credits'] for course in self.courses_registered)
-        print(f"Total credits: {total_credits}")
+        
         if total_credits == 0:
             self.GPA = 0.0
         else:
             weighted_sum = sum(course['grade'] * course['credits'] for course in self.courses_registered)
             self.GPA = weighted_sum / total_credits
-        print(f"Calculated GPA: {self.GPA}")
 
