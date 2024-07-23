@@ -1,0 +1,26 @@
+[
+    {
+        "email": "hmusangwa@alustudent.com",
+        "names": "Herve Musangwa",
+        "courses_registered": [
+            {
+                "name": "IPD",
+                "credits": 20.0,
+                "grade": 40.0
+            }
+        ],
+        "GPA": 0.0
+    },
+    {
+        "email": "jane@alustudent.com",
+        "names": "Jane Smith",
+        "courses_registered": [
+            {
+                "name": "IPD",
+                "credits": 20.0,
+                "grade": 70.0
+            }
+        ],
+        "GPA": 0.0
+    }
+]
